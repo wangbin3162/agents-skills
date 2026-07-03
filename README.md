@@ -35,6 +35,7 @@ cp -r skills/<skill-name> .claude/skills/
 | [html-prompt-generator](./skills/html-prompt-generator/) | 根据需求概述生成高质量中文 HTML 提示词 | `/html-prompt-generator` |
 | [plan-and-apply](./skills/plan-and-apply/) | 复杂任务的分步规划与执行工作流 | `/plan-and-apply` |
 | [website-cloner](./skills/website-cloner/) | 克隆在线站点为纯静态 HTML/CSS/JS | `/website-cloner` |
+| [design-extract](./skills/design-extract/) | 提取网站/截图的设计风格为 DESIGN.md 设计系统文档 | `/design-extract` |
 
 ---
 
@@ -59,6 +60,14 @@ cp -r skills/<skill-name> .claude/skills/
 适用场景：制作静态副本、离线存档、站点迁移前置、框架无关的页面复刻。
 
 [详细文档](./skills/website-cloner/README.md)
+
+### design-extract
+
+提取任意网站或截图的设计风格，输出一份对标 Claude.com 设计文档标准的 `DESIGN.md` 设计系统文档。支持 URL 在线采集、本地截图（多模态分析）、URL+截图三种输入；由 Claude 自身视觉能力分析，零外部依赖；输出带设计 token（`{colors.*}` / `{typography.*}` / `{component.*}`）的完整设计系统参考。
+
+适用场景：为 AI 编程/重设计提取设计参考、设计系统逆向、品牌风格复刻。
+
+[详细文档](./skills/design-extract/README.md)
 
 ## 技能类型
 
